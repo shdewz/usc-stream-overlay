@@ -1,7 +1,18 @@
-# 3WC2026 Stream Overlay
+# USC2026 Stream Overlay
 
-Tosu-based osu! tournament livestream overlay for [3 Digit World Cup 2026](https://osu.ppy.sh/community/forums/topics/2169669?n=1). Watch live on Twitch at [3wc_osu](https://www.twitch.tv/3wc_osu).
+Tosu-based osu! tournament livestream overlay for [USA States Cup 2026](https://osu.ppy.sh/community/forums/topics/2209436?n=1). Watch live on Twitch at [usa_states_cup_osu](https://twitch.tv/usa_states_cup_osu).
 
 ## Requirements
 
-- [tosu](https://github.com/tosuapp/tosu) >=4.2.0
+- [tosu](https://github.com/tosuapp/tosu) >=4.22.3
+
+## OBS osu! client setup
+
+| client | x    | y    |
+|--------|------|------|
+| 0      | 240  | 196  |
+| 1      | 0    | 556  |
+| 2      | 480  | 556  |
+| 3      | 1200 | 196  |
+| 4      | 960  | 556  |
+| 5      | 1440 | 556  |
