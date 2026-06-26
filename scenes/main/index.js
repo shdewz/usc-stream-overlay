@@ -73,10 +73,12 @@ socket.onmessage = async (event) => {
       $('#red_score_container').css('opacity', 1);
       $('#blue_score_container').css('opacity', 1);
       $('#score_diff_container').css('opacity', 1);
+      $('#chat_container').css('opacity', 0);
     } else {
       $('#red_score_container').css('opacity', 0);
       $('#blue_score_container').css('opacity', 0);
       $('#score_diff_container').css('opacity', 0);
+      $('#chat_container').css('opacity', 1);
     }
   }
 
@@ -94,7 +96,7 @@ socket.onmessage = async (event) => {
     $('#red_name').text(cache.nameRed);
     const team = teams.find((t) => t.team === cache.nameRed);
 
-    const region = regions.find(r => r.name === team?.region);
+    const region = regions.find((r) => r.name === team?.region);
     document.querySelector(':root').style.setProperty(`--red`, region?.color ?? '#ffffff');
 
     $('#red_score_title').text(`${cache.nameRed} SCORE`);
@@ -107,7 +109,7 @@ socket.onmessage = async (event) => {
     $('#blue_name').text(cache.nameBlue);
     const team = teams.find((t) => t.team === cache.nameBlue);
 
-    const region = regions.find(r => r.name === team?.region);
+    const region = regions.find((r) => r.name === team?.region);
     document.querySelector(':root').style.setProperty(`--blue`, region?.color ?? '#ffffff');
 
     $('#blue_score_title').text(`${cache.nameBlue} SCORE`);
@@ -219,5 +221,33 @@ socket.onmessage = async (event) => {
     } else {
       $('#score_diff_container').removeClass('red blue');
     }
+  }
+
+  if (cache.chatLen !== data.tourney.chat.length && teams) {
+    const current_chat_len = data.tourney.chat.length;
+    if (cache.chatLen === 0 || (cache.chatLen > 0 && cache.chatLen > current_chat_len)) {
+      $('#chat').html('');
+      cache.chatLen = 0;
+    }
+
+    for (let i = cache.chatLen || 0; i < current_chat_len; i++) {
+      const chat = data.tourney.chat[i];
+      const body = chat.message;
+      if (body.toLowerCase().startsWith('!mp')) {
+        continue;
+      }
+
+      const player = chat.name;
+      if (player === 'BanchoBot' && body.startsWith('Match history')) continue;
+
+      const chatParent = $('<div></div>').addClass(`chat-message ${chat.team}`);
+
+      chatParent.append($('<div></div>').addClass(`chat-name ${chat.team}`).text(player));
+      chatParent.append($('<div></div>').addClass('chat-body').text(body));
+      $('#chat').prepend(chatParent);
+    }
+
+    cache.chatLen = data.tourney.chat.length;
+    cache.chat_loaded = true;
   }
 };
