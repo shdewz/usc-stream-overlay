@@ -33,7 +33,7 @@ let teams, regions;
   }
 
   if (debug == 'true') {
-    $('#full-overlay').css('background-color', `rgba(255, 87, 87, 0)`);
+    $('#full-overlay').css('background-color', `rgba(255, 87, 87, 1)`);
   }
 
   if (color) {
@@ -67,10 +67,10 @@ socket.onmessage = async (event) => {
     $('#name').text(cache.name || placeholder);
   }
 
-  if ((data.tourney.scoreVisible && cache.combo >= 10 && client.play.combo.current < cache.combo) || (debug && cache.counter % 20 == 0)) {
+  if ((data.tourney.scoreVisible && cache.combo >= 10 && client.play.combo.current < cache.combo) || (debug == 'true' && cache.counter % 20 == 0)) {
     $('#name').css('transition', 'all 100ms cubic-bezier(0, 1, 0.4, 1)');
     $('#name').css('color', 'var(--miss)');
-    $('#name').css('transform', 'scale(1.1)');
+    $('#name').css('transform', 'scale(1.2)');
     console.log('triggered combo reset');
 
     setTimeout(() => {
