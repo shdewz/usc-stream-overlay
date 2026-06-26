@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-VariableFont_opsz,wght.ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Italic-VariableFont_opsz,wght.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cascadia Mono';
+  src: url('fonts/CascadiaMono-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Cascadia Mono';
+  src: url('fonts/CascadiaMono-Italic-VariableFont_wght.ttf');
+  font-style: italic;
+}
+
+:root {
+  --background: #14161c;
+  --background-lighter: #20242d;
+  --foreground: #ffffff;
+  --foreground-darker: #5a5d68;
+
+  --accent: #b8975a;
+  --accent-light: #dcd6c4;
+
+  --accent-mod-nm: #4a6b9c;
+  --accent-mod-hd: #9c8b3d;
+  --accent-mod-hr: #a8453d;
+  --accent-mod-dt: #8a5a6b;
+  --accent-mod-fm: #5a7d8a;
+  --accent-mod-tb: #fcfcfc;
+
+  --team-accent-west: #5a7d8a;
+  --team-accent-southwest: #a8453d;
+  --team-accent-midwest: #9c8b3d;
+  --team-accent-southeast: #8a5a6b;
+  --team-accent-northeast: #4a6b9c;
+}

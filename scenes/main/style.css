@@ -1,0 +1,288 @@
+@import url('../../_shared/common.css');
+
+:root {
+  --point-size: 24px;
+  font-size: 16px;
+
+  --red: #ffffff;
+  --blue: #ffffff;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  /* overflow-y: hidden; */
+  font-family: 'Inter';
+}
+
+.main {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 196px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+/* ==================================== */
+
+.header-team {
+  height: fit-content;
+  display: flex;
+  flex: 1;
+  height: calc(100% - 2 * 16px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Cascadia Mono';
+  font-feature-settings: "ss19" on;
+  text-transform: uppercase;
+}
+
+.header-team.red {
+  align-items: flex-start;
+  padding-left: 16px;
+  margin-left: 16px;
+  border-left: 16px solid var(--red);
+}
+
+.header-team.blue {
+  align-items: flex-end;
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 16px solid var(--blue);
+}
+
+.team-seed {
+  font-size: 1.3rem;
+  letter-spacing: 0.15em;
+  margin-right: -0.15em;
+  margin-left: 0.1em;
+}
+
+.team-code {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin: -0.16em 0;
+  margin-right: -0.15em;
+}
+
+.team-name {
+  font-size: 2rem;
+  letter-spacing: 0.4em;
+  margin-right: -0.3em;
+}
+
+/* ==================================== */
+
+.header-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.tournament-name {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.stage-name {
+  color: var(--accent);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.9em;
+  font-weight: 600;
+}
+
+.stage-name::before {
+  content: '–';
+  margin-right: 1.2em;
+}
+
+.stage-name::after {
+  content: '–';
+  margin-left: 1.2em;
+}
+
+.now-playing {
+  margin-top: 0.1em;
+  color: var(--foreground-darker);
+}
+
+.now-playing::before {
+  content: '♪';
+  margin-right: 0.7em;
+}
+
+
+/* ==================================== */
+
+.gameplay-area {
+  display: flex;
+  width: 100%;
+  height: 720px;
+  justify-content: center;
+  /* background-color: var(--background-lighter); */
+}
+
+.points-container {
+  width: calc(1920px / 4);
+  height: calc(720px / 2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: opacity 300ms ease;
+}
+
+.team-points-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.team-points-title {
+  display: flex;
+  gap: 0.2em;
+}
+
+.team-points {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 6px;
+}
+
+.team-point {
+  height: var(--point-size);
+  width: calc(var(--point-size) * 5.6);
+  border-radius: calc(var(--point-size) / 2);
+  border: 1px solid var(--foreground);
+}
+
+.team-point.red {
+  border-color: var(--red);
+}
+
+.team-point.blue {
+  border-color: var(--blue);
+}
+
+.team-point.filled.red {
+  background-color: var(--red);
+}
+
+.team-point.filled.blue {
+  background-color: var(--blue);
+}
+
+/* ==================================== */
+
+.footer {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Cascadia Mono';
+  font-feature-settings: "ss19" on;
+  text-transform: uppercase;
+}
+
+.team-score-container {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+  transition: opacity 300ms ease;
+}
+
+.team-score-container.red {
+  border-left: 24px solid var(--red);
+}
+
+.team-score-container.blue {
+  border-right: 24px solid var(--blue);
+  align-items: flex-end;
+}
+
+.team-score-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.4em;
+  color: var(--foreground-darker);
+  margin-right: -0.4em;
+}
+
+.team-score {
+  font-size: 2.2rem;
+  letter-spacing: 0.4em;
+  margin-right: -0.4em;
+}
+
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  --initial-width: 2560px;
+  --initial-height: 1440px;
+  --scale: 0.1;
+
+  width: calc(var(--initial-width) * var(--scale));
+  height: calc(var(--initial-height) * var(--scale));
+  margin: calc(var(--initial-height) * var(--scale) * -0.2) 0;
+
+  background-image: url('../../_shared/assets/logo.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.score-diff-container {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 300ms ease;
+}
+
+.score-diff-container i {
+  padding: 0 0.6em;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.score-diff-container.red i.red {
+  opacity: 1;
+  color: var(--red);
+}
+
+.score-diff-container.blue i.blue {
+  opacity: 1;
+  color: var(--blue);
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "team": "South California",
+    "seed": "1",
+    "code": "SCA",
+    "region": "WEST",
+    "players": ["ur cute", "315", "calebshucks", "EzChock", "RageMuffin", "ricoel"]
+  },
+  {
+    "team": "Virginia",
+    "seed": "2",
+    "code": "VA",
+    "region": "NORTHEAST",
+    "players": ["rng_", "BTMC", "Failing", "onetabby", "rektygon", "Uzumaki"]
+  },
+  {
+    "team": "North California",
+    "seed": "3",
+    "code": "NCA",
+    "region": "WEST",
+    "players": ["wudci", "CyberOni", "Haru Urara", "i suck at hd", "nicebroccoli", "WindowLife"]
+  },
+  {
+    "team": "New York",
+    "seed": "4",
+    "code": "NY",
+    "region": "NORTHEAST",
+    "players": ["Pezz", "Emerald Ages", "hidden on osu", "oPixay", "tekkito", "Tokii"]
+  },
+  {
+    "team": "Carolina",
+    "seed": "5",
+    "code": "CAR",
+    "region": "NORTHEAST",
+    "players": ["thank you", "bocchicookie", "Bonc", "Hobbes2", "Pullout Couch", "WooperFan1"]
+  },
+  {
+    "team": "Texas",
+    "seed": "6",
+    "code": "TX",
+    "region": "MIDWEST",
+    "players": ["ChillierPear", "aidinth", "decaten", "Flameztear", "toybot", "trigon"]
+  },
+  {
+    "team": "Nevada",
+    "seed": "7",
+    "code": "NV",
+    "region": "SOUTHWEST",
+    "players": ["orngoos", "-AJ", "Chamqp", "Cloudpaw", "freaky player", "Thelock"]
+  },
+  {
+    "team": "Colorado",
+    "seed": "8",
+    "code": "CO",
+    "region": "WEST",
+    "players": ["Crestive", "72X", "Cinnamon Twist", "im a fancy lad", "John Aim", "polkip"]
+  },
+  {
+    "team": "Oregon",
+    "seed": "9",
+    "code": "OR",
+    "region": "WEST",
+    "players": ["BoshyMan741", "Chheng", "eddy", "LUNAISTABBY", "Rinko Shirokane", "Tile"]
+  },
+  {
+    "team": "Oklahoma",
+    "seed": "10",
+    "code": "OK",
+    "region": "MIDWEST",
+    "players": ["MR JEFFERY", "8581210", "Bazingasdead", "hygeo", "Referee", "TTv_UFO"]
+  },
+  {
+    "team": "Massachusetts",
+    "seed": "11",
+    "code": "MA",
+    "region": "NORTHEAST",
+    "players": ["Daitaku Helios", "Cappy", "Ethan Jeon", "Evernight", "Rykic", "Zelths"]
+  },
+  {
+    "team": "Georgia",
+    "seed": "12",
+    "code": "GA",
+    "region": "SOUTHEAST",
+    "players": ["owoMaxx", "bing bong", "Kaibi", "razorfruit", "stupid dog", "the woke left"]
+  },
+  {
+    "team": "Washington",
+    "seed": "13",
+    "code": "WA",
+    "region": "WEST",
+    "players": ["Vertarix", "-Kamy", "Dice", "dnfd", "EthantrixV3", "Kimchisshi"]
+  },
+  {
+    "team": "Maryland",
+    "seed": "14",
+    "code": "MD",
+    "region": "NORTHEAST",
+    "players": ["BATBALL", "AWhitePhoenix", "gilgamesh815", "minus", "NoWifi", "wr8th"]
+  },
+  {
+    "team": "Pennsylvania",
+    "seed": "15",
+    "code": "PA",
+    "region": "NORTHEAST",
+    "players": ["leggings", "BlueChinchompa", "bunnylikemoney", "Mommy", "Reymexia", "Sunwraith"]
+  },
+  {
+    "team": "Tennessee",
+    "seed": "16",
+    "code": "TN",
+    "region": "MIDWEST",
+    "players": ["-Koda", "Firiiu", "Kippz", "Srr", "Suicune3", "Zetako"]
+  },
+  {
+    "team": "Stateless",
+    "seed": "17",
+    "code": "STA",
+    "region": "NA",
+    "players": ["RRR Winner", "Destros", "koral", "relikOS", "Tolic", "winz"]
+  },
+  {
+    "team": "Wisconsin",
+    "seed": "18",
+    "code": "WI",
+    "region": "MIDWEST",
+    "players": ["ThisIsGod", "autibun", "BoredBlaby", "kettoph", "Potenchill", "ThievingFlea"]
+  },
+  {
+    "team": "Florida",
+    "seed": "19",
+    "code": "FL",
+    "region": "SOUTHEAST",
+    "players": ["MC_Conqueror", "GRINDFICTION", "Sdot", "Senzek", "VonaAteSandwich", "xymbii"]
+  },
+  {
+    "team": "New Jersey",
+    "seed": "20",
+    "code": "NJ",
+    "region": "NORTHEAST",
+    "players": ["M I L E S", "jstyn", "Nazuna Nanakusa", "RyooYamada", "Watr", "YoshiLover456"]
+  },
+  {
+    "team": "Kanssouri",
+    "seed": "21",
+    "code": "KAN",
+    "region": "MIDWEST",
+    "players": ["1ncert", "Djn", "FishySquidMan", "Kaisuko", "sangoose", "Sympli"]
+  },
+  {
+    "team": "Arizona",
+    "seed": "22",
+    "code": "AZ",
+    "region": "SOUTHWEST",
+    "players": ["xractiv", "Artsy", "AuroraPhasmata", "Doga", "VoiD_Matterr", "walled"]
+  },
+  {
+    "team": "Michigan",
+    "seed": "23",
+    "code": "MI",
+    "region": "MIDWEST",
+    "players": ["TrickyPugster", "Atara", "Comlol", "sil boy", "Typeddiamond", "Umar"]
+  },
+  {
+    "team": "Connecticut",
+    "seed": "24",
+    "code": "CT",
+    "region": "NORTHEAST",
+    "players": ["william burgers", "alana", "Hydrole", "Leftoverss", "nase", "zivxare"]
+  },
+  {
+    "team": "Kentucky",
+    "seed": "25",
+    "code": "KY",
+    "region": "MIDWEST",
+    "players": ["Joyi", "Aizuuya", "fuy", "Gage", "Guhh", "KingArt"]
+  },
+  {
+    "team": "Minnesota",
+    "seed": "26",
+    "code": "MN",
+    "region": "MIDWEST",
+    "players": ["Chibi", "Garret", "kiri_", "Lilian", "Swiq", "yodeston"]
+  },
+  {
+    "team": "Indiana",
+    "seed": "27",
+    "code": "IN",
+    "region": "MIDWEST",
+    "players": ["Liliana", "AdrianLabubu67", "Dreamfyre", "Indiana", "Jtcantwell", "TheOtherBubble"]
+  },
+  {
+    "team": "Illinois",
+    "seed": "28",
+    "code": "IL",
+    "region": "MIDWEST",
+    "players": ["hubbawubba", "jellium", "LeChuga420", "Lupa", "REFANTAZIO", "Tuco"]
+  },
+  {
+    "team": "Territories",
+    "seed": "29",
+    "code": "TER",
+    "region": "",
+    "players": ["zoneluis", "Guam", "JoseSucks", "Poonz", "sno", "Txmas"]
+  },
+  {
+    "team": "New Mexico",
+    "seed": "30",
+    "code": "NM",
+    "region": "SOUTHWEST",
+    "players": ["Siwarha", "jerrydavid124", "Recent", "yuri propaganda"]
+  },
+  {
+    "team": "Ohio",
+    "seed": "31",
+    "code": "OH",
+    "region": "MIDWEST",
+    "players": ["HighDruh", "bread yummy", "cheeseball87", "Specter", "STH531", "Uma Rice Shower"]
+  }
+]

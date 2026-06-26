@@ -1,0 +1,26 @@
+[
+  {
+    "name": "WEST",
+    "color": "#5A7D8A"
+  },
+  {
+    "name": "SOUTHWEST",
+    "color": "#A8453D"
+  },
+  {
+    "name": "MIDWEST",
+    "color": "#9C8B3D"
+  },
+  {
+    "name": "SOUTHEAST",
+    "color": "#8A5A6B"
+  },
+  {
+    "name": "NORTHEAST",
+    "color": "#4A6B9C"
+  },
+  {
+    "name": "NA",
+    "color": "#4A6B9C"
+  }
+]
