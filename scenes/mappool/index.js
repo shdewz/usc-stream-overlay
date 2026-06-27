@@ -42,8 +42,8 @@ const toggles = {
 
 const cache = {
   currentPicker: 'red',
-  redName: 'Red Team',
-  blueName: 'Blue Team',
+  nameRed: 'Red Team',
+  nameBlue: 'Blue Team',
 };
 let selectedMaps = [];
 
@@ -219,7 +219,7 @@ socket.onmessage = async (event) => {
       )
         pickMap(
           pickedMap,
-          cache.currentPicker === 'red' ? cache.redName : cache.blueName,
+          cache.currentPicker === 'red' ? cache.nameRed : cache.nameBlue,
           cache.currentPicker
         );
     }
@@ -270,15 +270,15 @@ const setupBeatmaps = async () => {
     bm.parent.on('click', (event) => {
       if (!event.originalEvent.shiftKey)
         event.originalEvent.ctrlKey
-          ? banMap(bm, cache.redName, 'red')
-          : pickMap(bm, cache.redName, 'red');
+          ? banMap(bm, cache.nameRed, 'red')
+          : pickMap(bm, cache.nameRed, 'red');
       else resetMap(bm);
     });
     bm.parent.on('contextmenu', (event) => {
       if (!event.originalEvent.shiftKey)
         event.originalEvent.ctrlKey
-          ? banMap(bm, cache.blueName, 'blue')
-          : pickMap(bm, cache.blueName, 'blue');
+          ? banMap(bm, cache.nameBlue, 'blue')
+          : pickMap(bm, cache.nameBlue, 'blue');
       else resetMap(bm);
     });
     beatmaps.add(bm);
