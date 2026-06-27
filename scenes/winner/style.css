@@ -1,0 +1,79 @@
+@import url('../../_shared/common.css');
+
+:root {
+  --footer-height: 140px;
+  --red: #ffffff;
+  --blue: #ffffff;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  font-family: 'Inter';
+}
+
+.main {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  color: var(--foreground);
+  background-image: url('../../_shared/assets/win-bg.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.team-code {
+  font-size: 8rem;
+  font-weight: 700;
+  margin-bottom: -1rem;
+}
+
+.team-name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.team-name.red {
+  color: var(--red);
+}
+
+.team-name.blue {
+  color: var(--blue);
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 8rem;
+  gap: 0.2em;
+}
+
+.score-divider {
+  padding-bottom: 0.15em;
+}
+
+.score-number.winning {
+  color: var(--accent);
+}
