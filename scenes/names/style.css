@@ -42,5 +42,5 @@ html {
 	transform-origin: top left;
 	transition: all 100ms cubic-bezier(0, 1, 0.4, 1);
 	padding: 8px 12px;
-	text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+	text-shadow: 0 2px 24px rgba(0, 0, 0, 1);
 }
