@@ -67,7 +67,7 @@ socket.onmessage = async (event) => {
     $('#name').text(cache.name || placeholder);
 
     if (!cache.name) $('#name').css('color', '#5A5D68');
-    else $('#name').css('color', 'unset');
+    else $('#name').css('color', 'var(--foreground)');
   }
 
   if ((data.tourney.scoreVisible && cache.combo >= 10 && client.play.combo.current < cache.combo) || (debug == 'true' && cache.counter % 20 == 0)) {
