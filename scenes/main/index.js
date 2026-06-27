@@ -119,6 +119,7 @@ socket.onmessage = async (event) => {
 
   if (cache.bestOf !== data.tourney.bestOF) {
     const newmax = Math.ceil(data.tourney.bestOF / 2);
+    console.log({ new: newmax, old: cache.bestOf });
     if (cache.bestOf === undefined) {
       for (let i = 1; i <= newmax; i++) {
         $('#red_points').append($('<div></div>').attr('id', `red${i}`).addClass('team-point red'));
@@ -130,11 +131,12 @@ socket.onmessage = async (event) => {
         $('#blue_points').append($('<div></div>').attr('id', `blue${i}`).addClass('team-point blue'));
       }
     } else {
-      for (let i = firstTo; i > newmax; i--) {
+      for (let i = cache.firstTo; i > newmax; i--) {
         $(`#red${i}`).remove();
         $(`#blue${i}`).remove();
       }
     }
+
     cache.bestOf = data.tourney.bestOF;
     cache.firstTo = newmax;
 
