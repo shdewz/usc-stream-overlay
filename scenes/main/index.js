@@ -187,24 +187,27 @@ socket.onmessage = async (event) => {
 
   if (cache.scoreVisible) {
     const scores = [];
-    for (let i = 0; i < TEAMSIZE * 2; i++) {
-      let score = data.tourney.clients[i]?.play?.score || 0;
-      if (data.tourney.clients[i]?.play?.mods?.name?.toUpperCase().includes('EZ')) {
-        score *= cache.map?.ez_mult || 1;
-      }
+    // for (let i = 0; i < TEAMSIZE * 2; i++) {
+    //   let score = data.tourney.clients[i]?.play?.score || 0;
+    //   if (data.tourney.clients[i]?.play?.mods?.name?.toUpperCase().includes('EZ')) {
+    //     score *= cache.map?.ez_mult || 1;
+    //   }
 
-      scores.push({ id: i, score });
-    }
+    //   scores.push({ id: i, score });
+    // }
 
-    cache.scoreRed = scores
-      .filter((s) => s.id < TEAMSIZE)
-      .map((s) => s.score)
-      .reduce((a, b) => a + b);
+    // cache.scoreRed = scores
+    //   .filter((s) => s.id < TEAMSIZE)
+    //   .map((s) => s.score)
+    //   .reduce((a, b) => a + b);
 
-    cache.scoreBlue = scores
-      .filter((s) => s.id >= TEAMSIZE)
-      .map((s) => s.score)
-      .reduce((a, b) => a + b);
+    // cache.scoreBlue = scores
+    //   .filter((s) => s.id >= TEAMSIZE)
+    //   .map((s) => s.score)
+    //   .reduce((a, b) => a + b);
+
+    cache.scoreRed = data.tourney.totalScore.left;
+    cache.scoreBlue = data.tourney.totalScore.right;
 
     // cache.scoreRed = 1665624;
     // cache.scoreBlue = 796743;
